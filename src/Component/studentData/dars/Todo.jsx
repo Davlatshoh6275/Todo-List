@@ -148,7 +148,7 @@ export default class Todo extends Component {
                                     }
                                 </ul>
                             </div>
-                            <div className="card-footer">
+                            <div className="card-footer margin">
                                 <button className={"btn btn-success mr-3"} onClick={this.openModal}>add tasks</button>
                                 <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >edit</button>
                                 <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >delete</button>
@@ -169,7 +169,7 @@ export default class Todo extends Component {
                                     }
                                 </ul>
                             </div>
-                            <div className="card-footer">
+                            <div className="card-footer margin">
                                 <button className={"btn btn-success mr-3"} onClick={this.openModal}>add tasks</button>
                                 <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >edit</button>
                                 <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >delete</button>
@@ -190,7 +190,7 @@ export default class Todo extends Component {
                                     }
                                 </ul>
                             </div>
-                            <div className="card-footer">
+                            <div className="card-footer margin">
                                 <button className={"btn btn-success mr-3"} onClick={this.openModal}>Add Tasks</button>
                                 <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >Edit</button>
                                 <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >Delete</button>
@@ -213,10 +213,10 @@ export default class Todo extends Component {
                                     }
                                 </ul>
                             </div>
-                            <div className="card-footer">
-                                <button className={"btn btn-success mr-5"} onClick={this.openModal}>add tasks</button>
-                                <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >edit</button>
-                                <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >delete</button>
+                            <div className="card-footer margin">
+                                <button className={"btn btn-success mr-3  "} onClick={this.openModal}>Add tasks</button>
+                                <button className={"btn btn-warning mr-3  "} onClick={this.openModal2} >Edit</button>
+                                <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >Delete</button>
                             </div>
                         </div>
                     </div>
