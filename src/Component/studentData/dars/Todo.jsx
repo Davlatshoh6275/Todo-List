@@ -191,22 +191,22 @@ export default class Todo extends Component {
                                 </ul>
                             </div>
                             <div className="card-footer">
-                                <button className={"btn btn-success mr-3"} onClick={this.openModal}>add tasks</button>
-                                <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >edit</button>
-                                <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >delete</button>
+                                <button className={"btn btn-success mr-3"} onClick={this.openModal}>Add Tasks</button>
+                                <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >Edit</button>
+                                <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >Delete</button>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="card">
-                            <div className="card-header display-4">complete</div>
+                            <div className="card-header display-4">Complete</div>
                             <div className="card-body">
                                 <ul className={"list-group"}>
                                     {
                                         tasks.filter(tasks => tasks.status === "complete").map((tasks, index) => {
                                             return <li className={"list-group-item"} key={index}>
                                                 {tasks.title} <span className={"close"}><input value={tasks.title} checked={tasks.isActive} type="checkbox" onChange={this.handleValue} />
-                                                    <button>edit</button>
+                                                    
                                                 </span>
                                             </li>
                                         })
@@ -214,7 +214,7 @@ export default class Todo extends Component {
                                 </ul>
                             </div>
                             <div className="card-footer">
-                                <button className={"btn btn-success mr-3"} onClick={this.openModal}>add tasks</button>
+                                <button className={"btn btn-success mr-5"} onClick={this.openModal}>add tasks</button>
                                 <button className={"btn btn-warning mr-3 "} onClick={this.openModal2} >edit</button>
                                 <button className={"btn btn-danger mr-3 "} onClick={() => this.deleteBtn()} >delete</button>
                             </div>
